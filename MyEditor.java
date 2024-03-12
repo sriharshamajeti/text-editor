@@ -2,11 +2,17 @@ import javax.swing.*;
 
 public class MyEditor extends JFrame {
 
+    private static final int WIDTH = 800;
+    private static final int LENGTH = 800;
+
+    public MyEditor() {
+        setTitle("My Test Editor");
+        setSize(WIDTH, LENGTH);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("My Text Editor");
-        frame.setSize(600, 400); // Set initial window size
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
+        MyEditor editor = new MyEditor();
+        editor.setVisible(true);
     }
 }
